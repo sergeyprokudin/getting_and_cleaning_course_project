@@ -27,5 +27,5 @@ run_analysis <- function()
         
         data  = setNames( aggregate(data , by = agg_cols, mean), c("subject", "activity", colnames(data)))
         
-        write.table(data, "tidy_data.csv", row.name=FALSE)
+        write.table(data, "tidy_data.txt", row.name=FALSE)
 }
